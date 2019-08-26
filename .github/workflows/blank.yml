@@ -5,6 +5,9 @@ on:
     branches:
     - master
     - release/*
+  create:
+    tags:
+      - v*.*.*
 
 jobs:
   build:
@@ -24,9 +27,9 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     # upload-artifact
-    - run: mkdir -p path/to/artifact
-    - run: echo hello > path/to/artifact/world.txt
+    - name: create archive
+      run: git archive --format=zip HEAD -v -o actions_sandbox.zip
     - uses: actions/upload-artifact@master
       with:
-        name: my-artifact
-        path: path/to/artifact
+        name: actions_sandbox.zip
+        path: actions_sandbox.zip
