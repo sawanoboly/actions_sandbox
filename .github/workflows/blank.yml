@@ -15,6 +15,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: Dump env
       run: env | sort
+    - name: Dump event
+      run: cat $GITHUB_EVENT_PATH | jq .
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Run a multi-line script
