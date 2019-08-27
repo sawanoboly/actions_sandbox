@@ -28,10 +28,12 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+        go get -u github.com/tcnksm/ghr
+        find ./
     # upload-artifact
-    - name: create archive
-      run: git archive --format=zip HEAD -v -o actions_sandbox.zip
-    - uses: actions/upload-artifact@master
-      with:
-        name: actions_sandbox.zip
-        path: actions_sandbox.zip
+    # - name: create archive
+    #   run: git archive --format=zip HEAD -v -o actions_sandbox.zip
+    # - uses: actions/upload-artifact@master
+    #   with:
+    #     name: actions_sandbox.zip
+    #     path: actions_sandbox.zip
