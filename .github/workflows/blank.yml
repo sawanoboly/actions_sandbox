@@ -30,6 +30,7 @@ jobs:
       run: |
         php --version
         composer install
+        gem install bundler -N
         bundle update --bundler
         bundle install --binstubs --path=vendor/bundle
         # go get -u github.com/tcnksm/ghr
