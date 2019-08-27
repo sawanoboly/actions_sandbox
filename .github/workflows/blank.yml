@@ -17,7 +17,7 @@ jobs:
     steps:
     # - name: fail
     #   run: exit 1
-    # - uses: actions/checkout@master
+    - uses: actions/checkout@master
     - name: Dump env
       run: env | sort
     - name: Dump event
