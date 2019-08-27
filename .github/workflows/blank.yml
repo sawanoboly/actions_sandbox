@@ -30,8 +30,8 @@ jobs:
       run: |
         php --version
         composer install
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        bundle update --bundler
+        bundle install --binstubs --path=vendor/bundle
         # go get -u github.com/tcnksm/ghr
         # find /home/runner/go
     # upload-artifact
