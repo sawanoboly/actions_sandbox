@@ -25,11 +25,13 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Run a multi-line script
+      env:
+        GOPATH: /home/runner/go
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
         go get -u github.com/tcnksm/ghr
-        find $GOROOT/bin
+        find /home/runner/go
     # upload-artifact
     # - name: create archive
     #   run: git archive --format=zip HEAD -v -o actions_sandbox.zip
