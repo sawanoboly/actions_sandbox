@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: fail
-      run: exit 1
+    # - name: fail
+    #   run: exit 1
     - uses: actions/checkout@master
     - name: Dump env
       run: env | sort
