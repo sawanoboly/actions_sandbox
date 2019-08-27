@@ -17,7 +17,7 @@ jobs:
     steps:
     # - name: fail
     #   run: exit 1
-    - uses: actions/checkout@master
+    # - uses: actions/checkout@master
     - name: Dump env
       run: env | sort
     - name: Dump event
@@ -29,10 +29,11 @@ jobs:
         GOPATH: /home/runner/go
       run: |
         php --version
+        composer
         echo Add other actions to build,
         echo test, and deploy your project.
-        go get -u github.com/tcnksm/ghr
-        find /home/runner/go
+        # go get -u github.com/tcnksm/ghr
+        # find /home/runner/go
     # upload-artifact
     # - name: create archive
     #   run: git archive --format=zip HEAD -v -o actions_sandbox.zip
