@@ -28,6 +28,7 @@ jobs:
       env:
         GOPATH: /home/runner/go
       run: |
+        php --version
         echo Add other actions to build,
         echo test, and deploy your project.
         go get -u github.com/tcnksm/ghr
