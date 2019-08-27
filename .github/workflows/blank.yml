@@ -29,7 +29,7 @@ jobs:
         GOPATH: /home/runner/go
       run: |
         php --version
-        composer
+        composer install
         echo Add other actions to build,
         echo test, and deploy your project.
         # go get -u github.com/tcnksm/ghr

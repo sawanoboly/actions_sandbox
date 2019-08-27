@@ -1,0 +1,12 @@
+{
+    "name": "sawanoboriyu/actions_sandbox",
+    "require": {
+        "psr/log": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "sawanoboly",
+            "email": "sawanoboriyu@higanworks.com"
+        }
+    ]
+}
