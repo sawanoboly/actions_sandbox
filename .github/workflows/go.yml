@@ -22,5 +22,5 @@ jobs:
     - name: Get ghr
       run: |
         go get -v -u github.com/tcnksm/ghr
-        find $GOPATH
+        /home/runner/go/bin/ghr -v
 
